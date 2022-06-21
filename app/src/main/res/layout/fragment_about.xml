@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.AboutFragment">
+
+    <TextView
+        android:id="@+id/tvAbout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by Nathan Nguyen"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAbout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMe" />
+
+    <TextView
+        android:id="@+id/tvAbout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITEC 4550 6/19/2022"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAbout4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout2" />
+
+    <TextView
+        android:id="@+id/tvAbout4"
+        android:layout_width="292dp"
+        android:layout_height="162dp"
+        android:text="This project will put a bunch of names into a list and pressing the fab button will choose a random one from the list. You can sort, shuffle, and clear the list. You can also add names in the navigation drawer."
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAbout3" />
+
+    <ImageView
+        android:id="@+id/ivMe"
+        android:layout_width="183dp"
+        android:layout_height="271dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvAbout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/me2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
